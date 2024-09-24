@@ -28,7 +28,6 @@ COPY templates /templates
 
 EXPOSE 8000
 
-# WARNING! Debug enabled!
-CMD ["flask", "run", "--host", "0.0.0.0", "--port", "8000", "--debug"]
+CMD ["flask", "run", "--host", "0.0.0.0", "--port", "8000"]
 
 
