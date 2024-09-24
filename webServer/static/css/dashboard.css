@@ -1,0 +1,116 @@
+:root {
+	--default_font: system-ui; 
+    --default_item_padding: 5px;
+}
+
+
+html {
+	height: 100%;
+    margin: 0;
+}
+
+body {
+	margin: 0;
+    background-attachment: fixed;
+    height: 99.4%;
+}
+
+
+hr.solid {
+    border-top: 3px solid #8f8f8f;
+}
+
+.grid-container {
+	display: grid;
+    grid-template-columns: 15% auto auto auto auto auto auto auto auto auto auto auto;
+    grid-template-rows: 80px auto auto auto;
+    height: 100%;
+
+}
+.logo{
+    padding: 2px;
+    width: 60px;
+}
+.item-logo {
+    padding: var(--default_item_padding);
+    grid-area: 1 / 1 / 1 / 3;
+    color: white;
+    background-color: #14396a;
+}
+.item-title {
+    font-family: var(--default_font);
+    grid-area: 1 / 2 / 1 / 12;
+    text-align: center;
+    color: white;
+    background-color: #14396a;
+}
+.item-uname-settings {
+    padding: var(--default_item_padding);
+    font-family: var(--default_font);
+    grid-area: 1 / 11 / 1 / 13;
+    text-align: right;
+    color: white;
+    background-color: #14396a;
+
+    a:link {
+        color: rgb(180, 180, 180);
+    }
+    a:visited {
+        color: rgb(180, 180, 180);
+    }
+    a:hover {
+        color: white;
+    }
+    a:active {
+        color: rgba(255, 255, 255, 0);
+    }
+}
+.item-menu {
+    padding: var(--default_item_padding);
+    font-family: var(--default_font);
+    background-color: #bebebe;
+    grid-area: 2 / 1 / 5 / 2;
+    text-align: left;
+    color: rgb(0, 0, 0);
+
+    a:link {
+        background-color: #bebebe;
+        border: none;
+        color: rgb(0, 0, 0);
+        padding: 10px 20px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 16px;
+        cursor: pointer;
+        width: calc(100% - 40px);
+        margin: 0;
+    
+    }
+        
+}
+.item-iframe {
+    grid-area: 2 / 2 / 5 / 13;
+    
+
+    iframe {
+        height: 100%;
+        width: 100%;
+        border: none;
+    }
+    
+    
+}
+.active, .active:hover {
+    color: rgb(0, 0, 0);
+    background-color: #ffffff;
+    font-weight: bold;
+}
+.deactive{
+    color: rgb(0, 0, 0);
+    background-color: #bebebe;
+    font-weight: normal;
+}
+.deactive:hover{
+    background-color: #ececec;
+}

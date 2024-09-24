@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	{% block head %}
+	<link rel="stylesheet" href="/static/css/item_grid.css"/>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	{% endblock %}
+</head>
+<body>
+
+    <div class="grid-container">
+
+		{# For loops that build out items sendt from app.py #}
+
+		{% for product in products %}
+
+			<a href="{{product.path}}" target="_parent">
+				<div class="grid-item">
+					<image src="{{product.image}}"></image>
+				</div>
+			</a>
+
+		{% endfor %}
+
+    </div>
+
+</body>
+</html>

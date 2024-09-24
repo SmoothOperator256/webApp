@@ -1,0 +1,19 @@
+{% extends "base.html.jinja"%}
+{% block title %}register{% endblock %}
+{% block head %}
+	{{ super() }}
+{% endblock %}
+
+{% block content %}
+	<h1>Register new user</h1>
+	<div style="text-align:center;">
+	<form method="POST">
+		<input id="username" type="text" name="username", placeholder="username">
+	</br>
+		<input type="password" name="password", placeholder="password">
+	</br>
+		<button>Register</button>
+	</form>
+	</div>
+	<script>document.getElementById('username').focus();</script>
+{% endblock %}

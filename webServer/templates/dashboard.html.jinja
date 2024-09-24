@@ -1,0 +1,34 @@
+{% extends "base_dash.html.jinja"%}
+
+{% block title %}dashboard{% endblock %}
+{% block head %}
+    <link rel="stylesheet" href="/static/css/dashboard.css"/>
+    <script src="/static/js/linkStyleToggle.js" defer></script>
+{% endblock %}
+
+{% block content %}
+
+    <div class="grid-container">
+        <div class="item-logo">
+            <image class="logo" src="/static/images/logo_white.png"></image>
+        </div>
+        <div class="item-title">
+            <h1>Dashboard</h1>
+        </div>
+        <div class="item-uname-settings">
+            <p>{{user}} // <a href="#">Settings</a> // <a href="http://127.0.0.1/logout">Logout</a></p>
+        </div>
+        <div class="item-menu">
+
+            <a id="default" class="deactive" href="http://127.0.0.1/products" target="iframe">My Courses</a>
+            <a class="deactive" href="http://127.0.0.1/course/test" target="iframe">test</a>
+            <hr class="solid">
+            <a class="deactive" href="http://127.0.0.1/db" target="iframe">View database2</a>
+
+        </div>
+        <div class="item-iframe">
+            <iframe src="http://127.0.0.1/products" name="iframe" title="Iframe"></iframe>
+        </div>
+    </div>
+
+{% endblock %}

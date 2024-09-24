@@ -1,0 +1,16 @@
+{% extends "base.html.jinja"%}
+{% block title %}Welcome{% endblock %}
+{% block head %}
+	{{ super() }}
+{% endblock %}
+
+{% block content %}
+	<div>
+	<h1>Continuum</h1>
+	<p style="font-size:200%;">We work on important shit!</p>
+	</div>
+	<div>
+	<p><a href="/login">Login</a> or <a href="/register">Sign up</a> to learn more.</p>
+	</div>
+
+{% endblock %}

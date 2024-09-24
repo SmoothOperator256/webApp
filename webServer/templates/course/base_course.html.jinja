@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<link rel="stylesheet" href="/static/css/course.css"/>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>{% block title %}{% endblock %} - Continuum</title>
+</head>
+<body>
+
+	<div class="grid-container">
+	<div>
+	<div id="mySidepanel" class="sidepanel">
+		<a href="javascript:void(0)" class="closebtn" onclick="closeNav()">x</a>
+		<a href="/dashboard">Dashboard</a>
+		{% block sectionLinks %}
+
+		{% endblock %}
+	</div>
+
+	<button class="openbtn" onclick="openNav()">☰</button>
+	</div>
+	<div>
+	<div>
+		{% block content %}
+
+		{% endblock %}
+	</div>
+	</div>
+	</div>
+
+	<script>
+	function openNav() {
+	document.getElementById("mySidepanel").style.width = "250px";
+	}
+
+	function closeNav() {
+	document.getElementById("mySidepanel").style.width = "0";
+	}
+	</script>
+</body>
+</html>

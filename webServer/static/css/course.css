@@ -1,0 +1,94 @@
+
+.grid-container {
+	  display: grid;
+    grid-template-columns: 250px auto 18%;
+}
+
+
+body {
+    font-family: system-ui;
+    scroll-behavior: smooth;
+}
+
+.sidepanel  {
+    width: 250px;
+    position: fixed;
+    z-index: 1;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background-color: #14396a;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+  }
+  .sidepanel p {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-family: system-ui;
+    font-size: 25px;
+    color: #000000;
+    background-color: #92a8d2;
+    display: block;
+    transition: 0.3s;
+    cursor: default;
+  }
+  .sidepanel a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-family: system-ui;
+    font-size: 25px;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+  }
+  .sidepanel a:hover {
+    color: #f1f1f1;
+  }
+
+
+  .sidepanel li a {
+    font-size: 18px;
+    padding:5px;
+  }
+  .sidepanel li::marker {
+    color: #818181;
+  }
+  .sidepanel ul{
+    margin-left:50px;
+  }
+
+
+  .sidepanel .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+  }
+  
+  .openbtn {
+    top: 0;
+    left: 0;
+    position: fixed;
+    font-size: 20px;
+    cursor: pointer;
+    background-color: #ffffff;
+    color: rgb(0, 0, 0);
+    padding: 10px 15px;
+    border: none;
+  }
+  
+  .openbtn:hover {
+    background-color:#a7a7a7;
+  }
+
+.active a, .active a:hover{
+  color: #ffffff;
+  
+}
+.deactive a, .active li::marker {
+    color: #818181;
+}
+.deactive a:hover, .active li::marker{
+    color: #c4c4c4;
+}

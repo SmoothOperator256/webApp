@@ -1,0 +1,64 @@
+:root {
+	--default_font: 'Times New Roman', Times, serif; 
+}
+
+
+h1 {
+	font-family: var(--default_font);
+	color: white;
+	text-align: center;
+	font-size:1000%
+}
+
+html {
+	height: 100%;
+}
+
+body {
+	background-color: #111f31;
+	background-image: radial-gradient(#14396a, #111f31);
+	background-repeat: no-repeat;
+	margin: 0;
+	background-attachment: fixed;
+}
+
+p {
+	font-family: var(--default_font);
+	color: white;
+	text-align: center;
+}
+
+a {
+	font-family: var(--default_font);
+}
+a:link {
+	color: rgb(180, 180, 180);
+}
+a:visited {
+	color: rgb(180, 180, 180);
+}
+a:hover {
+	color: white;
+}
+a:active {
+	color: rgba(255, 255, 255, 0);
+}
+
+.flashes{
+
+	color: rgb(225, 86, 11);
+	font-family: var(--default_font);
+	text-align: center;
+}
+header {
+	background-color: #14396a;
+}
+footer {
+	position: fixed;
+	bottom: 0;
+	width: 100%;
+}
+
+.grid-container {
+	display: grid;
+}
